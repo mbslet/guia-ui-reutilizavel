@@ -28,6 +28,9 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "eslintConfig": {
     "root": true,
     "env": {

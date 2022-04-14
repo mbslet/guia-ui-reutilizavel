@@ -41,7 +41,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style scoped>
 .body, html, app {
   padding: 0;
   margin: 0;

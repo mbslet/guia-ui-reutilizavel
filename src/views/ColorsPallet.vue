@@ -70,7 +70,7 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .body, html {
