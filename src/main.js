@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import "./assets/sass/layout.scss";
 import router from './router'
 import PrimeVue from 'primevue/config';
 import Card from 'primevue/card';
