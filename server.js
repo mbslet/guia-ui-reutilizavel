@@ -1,7 +1,13 @@
+const cool = require('cool-ascii-faces');
 const express = require('express');
-const serveStatic = require("serve-static")
 const path = require('path');
-app = express();
-app.use(serveStatic(path.join(__dirname, 'dist')));
-const port = process.env.PORT || 3000;
-app.listen(port);
+const PORT = process.env.port||'8080';
+
+
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/index'))
+  .get('/cool', (req, res) => res.send(cool()))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
